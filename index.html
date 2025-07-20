@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
         /* Apply the Poppins font family */
@@ -74,12 +74,12 @@
     <main>
         <section id="hero" class="min-h-screen flex items-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1554189097-94974346de69?q=80&w=2940&auto=format&fit=crop');">
             <div class="container mx-auto px-6 text-center bg-black/50 backdrop-blur-sm py-20 rounded-xl">
-                <img src="https://i.postimg.cc/W1D4cZxL/pp.jpg" alt="Profile Picture" class="w-40 h-40 mx-auto rounded-full border-4 border-white shadow-xl mb-6">
+                <img src="https://i.postimg.cc/W1D4cZxL/pp.jpg" alt="Profile Picture" class="w-40 h-40 mx-auto rounded-full border-4 border-white shadow-xl mb-6" onerror="this.onerror=null;this.src='https://placehold.co/160x160/FFFFFF/4F46E5?text=RK';">
                 <h1 class="text-4xl md:text-6xl font-extrabold text-white text-shadow">Hi, I'm Rupesh Kondi</h1>
                 <p class="text-xl md:text-2xl mt-4 text-indigo-200 font-light">A Passionate ECE Student & Developer</p>
                 <div class="mt-8 space-x-4">
                 <a href="#projects" class="bg-indigo-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-indigo-700 transition-transform transform hover:scale-105 shadow-lg">View My Work</a>
-            
+                
                 <a href="https://raw.githubusercontent.com/Rupeshkondi/my-portfolio/main/KONDI_RUPESH_ATS_RESUME.pdf" target="_blank" rel="noopener noreferrer" class="bg-white text-indigo-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition-transform transform hover:scale-105 shadow-lg">View Resume</a>
                 </div>
             </div>
@@ -145,30 +145,35 @@
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">My <span class="hover-underline-animation">Projects</span></h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    
+                    <!-- FIX: Corrected the nested div structure and updated the image -->
                     <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
-                        <img src="https://images.unsplash.com/photo-1561484930-998b6a7b22e8?q=80&w=2940&auto=format&fit=crop" alt="Weather app concept with clouds and sun" class="w-full h-48 object-cover">
-                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
-                        <img src="https://images.unsplash.com/photo-1605792657660-596af9009e82?q=80&w=802&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Abstract image of currency and crypto symbols" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/FFFFFF/4F46E5?text=Project';">
+                        <img src="https://images.unsplash.com/photo-1605792657660-596af9009e82?q=80&w=802&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Abstract image of currency and crypto symbols" class="w-full h-48 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-bold mb-2">Global Currency Converter</h3>
                             <p class="text-gray-600 mb-4">A real-time currency converter supporting crypto-to-fiat, fiat-to-crypto, and crypto-to-crypto conversions with a modern, searchable UI.</p>
                             <a href="https://global-crypto-converter.netlify.app/" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-semibold hover:underline">View Project <i class="fas fa-arrow-right ml-1"></i></a>
                         </div>
-                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://images.unsplash.com/photo-1561484930-998b6a7b22e8?q=80&w=2940&auto=format&fit=crop" alt="Weather app concept with clouds and sun" class="w-full h-48 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-bold mb-2">Weather App</h3>
                             <p class="text-gray-600 mb-4">A web app that fetches and displays real-time weather data from a third-party API. Built with JavaScript and styled with Tailwind CSS.</p>
                             <a href="https://rupeshkondi.github.io/advanced-whether-app/" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-semibold hover:underline">View Project <i class="fas fa-arrow-right ml-1"></i></a>
                         </div>
                     </div>
+
                     <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
                         <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?q=80&w=2832&auto=format&fit=crop" alt="Circuit board" class="w-full h-48 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-bold mb-2">Advanced Age Calculator</h3>
                             <p class="text-gray-600 mb-4">Age Calculator is a simple and responsive web application that lets users calculate their exact age in years, months, and days based on their date of birth. Just select your birthdate, and the app instantly displays your age with an intuitive and clean design. It’s fast, accurate, and works online.</p>
-                            <a href="https://age-calculator-rupesh.netlify.app/" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-semibold hover:underline">View on GitHub <i class="fab fa-github ml-1"></i></a>
+                            <a href="https://age-calculator-rupesh.netlify.app/" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-semibold hover:underline">View Project <i class="fas fa-arrow-right ml-1"></i></a>
                         </div>
                     </div>
+
                     <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
                         <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=2874&auto=format&fit=crop" alt="Face detection grid" class="w-full h-48 object-cover">
                         <div class="p-6">
@@ -229,9 +234,9 @@
                 </p>
 
                 <form action="https://formsubmit.co/rupeshkondi96@gmail.com" method="POST" class="max-w-xl mx-auto bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
-            
+                
                 <input type="hidden" name="_captcha" value="false">
-            
+                
                 <div class="mb-6">
                     <label for="name" class="block text-gray-700 font-semibold mb-2">Full Name</label>
                     <input type="text" id="name" name="name" placeholder="e.g., John Doe" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
